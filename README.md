@@ -6,13 +6,16 @@ updaten by : ..., the .. .. ...
 # Introduction
 This repository contains all required files and information for complete characterization of the main MCU-board of Swiss Solar Boat. Please read the documentation carefully before starting, especially the _Important things before starting_ section.
 
-The main MCU-board is made of a powerfull microcontroller used for communication (based on the CAN protocol) between the differents modules of the boat. It also includes differents  
+The main MCU-board is made of a powerfull microcontroller used for communication (based on the CAN protocol) between the differents modules of the boat. It also includes I2C lines with dedicated connectors for communication insides boat modules (eg. the battery box) and a SD card holder to save a logfile for example.
 
 # ! Important things before starting !
 
 # Documentation
 
 ## Sub-system characterization
+### MCU
+The board is based on ATSAME51J20A MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
+
 ### Power supply
 - 24V to 5V DC-DC -> buck 
 - 5V to 3.3V DC-D -> LDO
