@@ -1,2 +1,55 @@
 # MCU-SwissSolarBoat
+written by : Baptiste Savioz, the 03.03.2022  
+reviewed by : ..., the .. .. ....  
+updaten by : ..., the .. .. ...  
+
+# Introduction
+This repository contains all required files and information for complete characterization of the main MCU-board of Swiss Solar Boat. Please read the documentation carefully before starting, especially the _Important things before starting_ section.
+
+The main MCU-board is made of a powerfull microcontroller used for communication (based on the CAN protocol) between the differents modules of the boat. It also includes differents  
+
+# ! Important things before starting !
+
+# Documentation
+
+## Sub-system characterization
+### Power supply
+- 24V to 5V DC-DC -> buck 
+- 5V to 3.3V DC-D -> LDO
+
+### Clock
+- frequency of the MCU
+- quartz horloger : 32768[Hz]
+- quartz high freq
+
+### Communication
+- CAN
+- I2C
+- JTAG
+- USB
+
+### Connectors
+- complete list of connectors
+
+### SD-card and memory
+
+
+## exhaustive list of component
+|Component|name|number|reference|general purpose|
+|---------|----|------|---------|---------------|
+|Microcontroler|ATSAME51J20A-AF|1|---------|MCU of the board|
+|Buck|---|1|---|Power supply : convert 24V DC to stable 5V DC|
+|LDO|---|1|---|Power supply : convert 5V DC to stable 3.3V DC|
+|Crystal|---|1|---|Frequency generation for the MCU|
+
+
+## Pinout and Shield
+pinout schematic and shield characterization
+
+
+## physical adress of modules
+|Module|protocol|Address|general purpose|
+|------|--------|-------|---------------|
+|dummy|I2C|0xfh6c|dummy module used for example|
+
  Repository for documentation, characteristics and all required elements for the Microcontroller board, including PCB conception, of SSB.
