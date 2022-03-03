@@ -17,8 +17,12 @@ The main MCU-board is made of a powerfull microcontroller used for communication
 The board is based on ATSAME51J20A MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
 
 ### Power supply
-- 24V to 5V DC-DC -> buck 
-- 5V to 3.3V DC-D -> LDO
+The board is powered with a 24[V] DC line that goes all along the boat. It can be quite noisy and therefore we choosed to graduatly decreased the voltage from 24[V] to 5[V]  through a high efficiency buck converter and then from 5[V] to 3.3[V] with a LDO IC. The LDO will power only the main board to ensure stable and clean power to it. On the other hand, the 5[V] power supply can be used by the shield to power other small devices.  
+ * Buck converter : 24[V] DC to 5[V] DC  
+reference, characteristics, specification, decoupling,etc.
+
+ * LDO : 5[V] DC to 3.3[V] DC  
+ reference, characteristics, specification, decoupling,etc.
 
 ### Clock
 - frequency of the MCU
@@ -38,12 +42,12 @@ The board is based on ATSAME51J20A MCU from atmel, using the 32-bit ARM® Cortex
 
 
 ## exhaustive list of component
-|Component|name|number|reference|general purpose|
-|---------|----|------|---------|---------------|
-|Microcontroler|ATSAME51J20A-AF|1|---------|MCU of the board|
-|Buck|---|1|---|Power supply : convert 24V DC to stable 5V DC|
-|LDO|---|1|---|Power supply : convert 5V DC to stable 3.3V DC|
-|Crystal|---|1|---|Frequency generation for the MCU|
+|Component|name|number|reference|general purpose|usual reseller|
+|---------|----|------|---------|---------------|--------------|
+|Microcontroler|ATSAME51J20A-AF|1|---------|MCU of the board|---|
+|Buck|---|1|---|Power supply : convert 24V DC to stable 5V DC|---|
+|LDO|---|1|---|Power supply : convert 5V DC to stable 3.3V DC|---|
+|Crystal|---|1|---|Frequency generation for the MCU|---|
 
 
 ## Pinout and Shield
