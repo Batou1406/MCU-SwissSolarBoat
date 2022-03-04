@@ -23,6 +23,8 @@ The board is powered with a 24[V] DC line that goes all along the boat. It can b
 The buck used is the TPS54233QDRQ1 from texas instrument. It has been designed with WEBENCH software from TI to operate at 20-28[V] in, 5[V] out, 2[A] out max, 50[°C].  
 https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 
+![image](image/buck_design_webench.svg)
+
  * LDO : 5[V] DC to 3.3[V] DC  
  reference, characteristics, specification, decoupling,etc.
 
