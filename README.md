@@ -19,14 +19,14 @@ The board is based on ATSAME51J20A-AF MCU from atmel, using the 32-bit ARM® Cor
 ### Power supply
 The board is powered with a 24[V] DC line that goes all along the boat. It can be quite noisy and therefore we choosed to graduatly decreased the voltage from 24[V] to 5[V]  through a high efficiency buck converter and then from 5[V] to 3.3[V] with a LDO IC. The LDO will power only the main board to ensure stable and clean power to it. On the other hand, the 5[V] power supply can be used by the shield to power other small devices. 
 
- * Buck converter : 24[V] DC to 5[V] DC  
+ * **Buck converter** : 24[V] DC to 5[V] DC  
 The buck used is the TPS54233QDRQ1 from texas instrument. It has been designed with WEBENCH software from TI to operate at 20-28[V] in, 5[V] out, 2[A] out max, 50[°C].  
 https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 
 ![image](image/buck_design_webench.svg)
 
- * LDO : 5[V] DC to 3.3[V] DC  
- reference, characteristics, specification, decoupling,etc.
+ * **LDO** : 5[V] DC to 3.3[V] DC    
+ The LDO used is the AP7365-33WG-7, which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. Further update of this PCB may want to upgrade the LDO to an up to datew version.
 
 ### Clock
 - frequency of the MCU
