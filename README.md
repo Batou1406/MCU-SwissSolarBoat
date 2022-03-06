@@ -40,7 +40,7 @@ https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 - CAN
 - I2C
 - JTAG
-- USB
+* **USB** : the MCU has a built-in USB 2.0 line. In order to be used the MCU need to be powered at 3.3[V] (min 3[V] - max 3.6[V]) and there is some restrictions on clock source and frequency, especially for USB host connections, that need to be taken into account when doing the firmware. A micro-USB B connector has been choosen for that connection. The VBUS line (5[V]) is of no use on the board and it is not further connected. The ID pin from the micro-USB B connector is by default left unconnected but there is a solder bridge jumper available on the board if it needs to be grounded (in order to host USB communication).
 
 ### Connectors
 - complete list of connectors
