@@ -26,7 +26,7 @@ https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 ![image](image/buck_design_webench.svg)
 
  * **LDO** : 5[V] DC to 3.3[V] DC    
- The LDO used is the AP7365-33WG-7, which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. Further update of this PCB may want to upgrade the LDO to an up to datew version.
+ The LDO used is the AP7365-33WG-7, which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. However, switching to AP7366 wouldn't required adaptation of the PCB since it is also in the SOT25 package. Further update of this PCB may want to upgrade the LDO to an up to date version.
 
 ### Clock
 - frequency of the MCU
