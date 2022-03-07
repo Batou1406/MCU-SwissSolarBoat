@@ -32,10 +32,8 @@ https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
  The LDO used is the AP7365-33WG-7, which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. However, switching to AP7366 wouldn't required adaptation of the PCB since it is also in the SOT25 package. Further update of this PCB may want to upgrade the LDO to an up to date version.
 
 ### Clock
-- frequency of the MCU
-- quartz horloger : 32768[Hz]
-- quartz high freq
-
+The MCU has several clocking options and can admit two external oscillators (32768[Hz] for real time counting applications RTC and higher frequency oscillators). By default it is running at 48[MHz] on internal oscillators. Only the RTC oscillators is mounted on the board. It is a 32768[Hz] oscillators with low load capacitance (9[pF]) [Q 0,032768-JTX310-9-20-T1-HMR-LF](https://www.jauch.com/downloadfile/57fde22d50dbf_d3c203011c87952f2834/jtx310-auto-2-210512.pdf) connected to pin PA0 and PA1 (XIN32, XOUT32).
+Hz
 ### Communication
 * **CAN** : The MCU comes with two built-in CAN controller which will be both used. The CAN tranciever [TCAN337GDR](https://www.ti.com/lit/ds/symlink/tcan337g.pdf?ts=1646566581440&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTCAN337GDR) is used to handle the CAN protocol. It's 3.3V logic, therefore the differential on the CAN bus is 3.3V. Nonetheless, the device is fully compatible with 5V differential logic. The CAN tranciver uses a serial line to communicate with the CAN controller of the MCU. m Moreover it also inlcudes a silent mode for listen only (high active) and a fault pin to indicate a failure on the device (high active). In order to use the silent mode, a solder bridge need to be fill on the board, otherwise, if silent mode is of no use, please use the other solder bridge to ground it. The fault pin needs a pull-up resistor to be mounted on the board and the solder bridge to be filled in order to be used.  
 
