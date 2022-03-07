@@ -37,16 +37,16 @@ https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 - quartz high freq
 
 ### Communication
-* **CAN** : The MCU comes with two built-in CAN controller which will be both used. The CAN tranciever [TCAN337GDR](https://www.ti.com/lit/ds/symlink/tcan337g.pdf?ts=1646566581440&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTCAN337GDR) is used to handle the CAN protocol. It's 3.3V logic, therefore the differential on the CAN bus is 3.3V. Nonetheless, the device is fully compatible with 5V differential logic. The CAN tranciver uses a serial line to communicate with the CAN controller of the MCU. m Moreover it also inlcudes a silent mode for listen only (high active) and a fault pin to indicate a failure on the device (high active). In order to use the silent mode, a solder bridge need to be fill on the board, otherwise, if silent mode is of no use, please use the other solder bridge to ground it. The fault pin needs a pull-up resistor to be mounted on the board and the solder bridge to be filled in order to be used.
-|Name| Pin connected on the MCU|comment|
-|----|-------------------------|-------|
-|RX_CAN1|PB15| |
-|TX_CAN1|PB14| |
+* **CAN** : The MCU comes with two built-in CAN controller which will be both used. The CAN tranciever [TCAN337GDR](https://www.ti.com/lit/ds/symlink/tcan337g.pdf?ts=1646566581440&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTCAN337GDR) is used to handle the CAN protocol. It's 3.3V logic, therefore the differential on the CAN bus is 3.3V. Nonetheless, the device is fully compatible with 5V differential logic. The CAN tranciver uses a serial line to communicate with the CAN controller of the MCU. m Moreover it also inlcudes a silent mode for listen only (high active) and a fault pin to indicate a failure on the device (high active). In order to use the silent mode, a solder bridge need to be fill on the board, otherwise, if silent mode is of no use, please use the other solder bridge to ground it. The fault pin needs a pull-up resistor to be mounted on the board and the solder bridge to be filled in order to be used.  
+
+|Name|Pin connected on the MCU|comment|
+|----|------------------------|-------|
+|RX_CAN1|PB15||
+|TX_CAN1|PB14||
 |S_CAN1|PB13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN1|PB12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
-|----|-------------------------|-------|
-|RX_CAN2|---| |
-|TX_CAN2|---| |
+|RX_CAN2|---||
+|TX_CAN2|---||
 |S_CAN2|---|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN2|---|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
