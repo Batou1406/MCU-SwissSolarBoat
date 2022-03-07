@@ -1,1 +1,2 @@
-Record=TopLevelDocument|FileName=MCU-main-board-schematic.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=MCU-connectors-schematic.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=MCU-connectors-schematic.SchDoc|FileName=MCU-main-board-schematic.SchDoc|SheetNumber=1
