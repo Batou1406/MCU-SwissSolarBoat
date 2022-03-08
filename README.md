@@ -1,6 +1,6 @@
 # MCU-SwissSolarBoat
 written by : Baptiste Savioz, the 03.03.2022  
-reviewed by : Tych, the .. .. ....  
+reviewed by : ..., the .. .. ....  
 updaten by : ..., the .. .. ...  
 
 # Introduction
@@ -14,7 +14,7 @@ The main MCU-board is made of a powerfull microcontroller used for communication
 
 ## Sub-system characterization
 ### MCU
-The board is based on ATSAME51J20A-AF MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
+The board is based on [ATSAME51J20A-AF](https://www.mouser.ch/datasheet/2/268/60001507E-1660031.pdf) MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
 * **Reset Pin** the reset pin is low active and powered-up trough a low pass RC filter as recommanded for design in noisy environnement.
 * **Power Pins** The power pins are wired according to typical power connection for switching mode power supply, with a feartite bead for high frequency isolation and EMC.
 ![image](image/power_pins_typical.png)
@@ -23,13 +23,13 @@ The board is based on ATSAME51J20A-AF MCU from atmel, using the 32-bit ARM® Cor
 The board is powered with a 24[V] DC line that goes all along the boat. It can be quite noisy and therefore we choosed to graduatly decreased the voltage from 24[V] to 5[V]  through a high efficiency buck converter and then from 5[V] to 3.3[V] with a LDO IC. The LDO will power only the main board to ensure stable and clean power to it. On the other hand, the 5[V] power supply can be used by the shield to power other small devices. 
 
  * **Buck converter** : 24[V] DC to 5[V] DC  
-The buck used is the TPS54233QDRQ1 from texas instrument. It has been designed with WEBENCH software from TI to operate at 20-28[V] in, 5[V] out, 2[A] out max, 50[°C].  
+The buck used is the [TPS54233QDRQ1](https://www.ti.com/lit/ds/symlink/tps54233-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1646666212563&ref_url=https%253A%252F%252Fwww.mouser.ch%252F) from texas instrument. It has been designed with WEBENCH software from TI to operate at 20-28[V] in, 5[V] out, 2[A] out max, 50[°C].  
 https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 
 ![image](image/buck_design_webench.svg)
 
  * **LDO** : 5[V] DC to 3.3[V] DC    
- The LDO used is the AP7365-33WG-7, which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. However, switching to AP7366 wouldn't required adaptation of the PCB since it is also in the SOT25 package. Further update of this PCB may want to upgrade the LDO to an up to date version.
+ The LDO used is the [AP7365-33WG-7](https://www.diodes.com/assets/Datasheets/products_inactive_data/AP7365.pdf), which is a fixed output voltage LDO in the package SOT25. It not recommanded for new design and will shortly full out of supply. The newer version AP7366 is available but haven't been choosen because parts weren't available for now. However, switching to AP7366 wouldn't required adaptation of the PCB since it is also in the SOT25 package. Further update of this PCB may want to upgrade the LDO to an up to date version.
 
 ### Clock
 The MCU has several clocking options and can admit two external oscillators (32768[Hz] for real time counting applications RTC and higher frequency oscillators). By default it is running at 48[MHz] on internal oscillators. Only the RTC oscillators is mounted on the board. It is a 32768[Hz] oscillators with low load capacitance (9[pF]) [Q 0,032768-JTX310-9-20-T1-HMR-LF](https://www.jauch.com/downloadfile/57fde22d50dbf_d3c203011c87952f2834/jtx310-auto-2-210512.pdf) connected to pin PA0 and PA1 (XIN32, XOUT32).
@@ -48,7 +48,6 @@ Hz
 |S_CAN2|---|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN2|---|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
-In addition, both line of the bus are protected with 18V ESD array protection [HSP181-2W3Y](https://www.st.com/resource/en/datasheet/hsp181-2w3y.pdf) made for automotive high speed differential line.
 - I2C
 - JTAG
 * **USB** : the MCU has a built-in USB 2.0 line. In order to be used the MCU need to be powered at 3.3[V] (min 3[V] - max 3.6[V]) and there is some restrictions on clock source and frequency, especially for USB host connections, that need to be taken into account when doing the firmware. A micro-USB B connector has been choosen for that connection. The VBUS line (5[V]) is of no use on the board and it is not further connected. The ID pin from the micro-USB B connector is by default left unconnected but there is a solder bridge jumper available on the board if it needs to be grounded (in order to host USB communication).
