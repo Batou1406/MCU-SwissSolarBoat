@@ -15,7 +15,7 @@ The main MCU-board is made of a powerfull microcontroller used for communication
 ## Sub-system characterization
 ### MCU
 The board is based on [ATSAME51J20A-AF](https://www.mouser.ch/datasheet/2/268/60001507E-1660031.pdf) MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
-* **Reset Pin** the reset pin is low active and powered-up trough a low pass RC filter as recommanded for design in noisy environnement.
+* **Reset Pin** the reset pin is low active and powered-up trough a low pass RC filter as recommanded for design in noisy environnement. Moreover, it's connected to a push button for manual reset.
 * **Power Pins** The power pins are wired according to typical power connection for switching mode power supply, with a feartite bead for high frequency isolation and EMC.
 ![image](image/power_pins_typical.png)
 
@@ -43,14 +43,15 @@ Hz
 |TX_CAN1|PB14||
 |S_CAN1|PB13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN1|PB12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
-|RX_CAN2|---||
-|TX_CAN2|---||
-|S_CAN2|---|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
-|FAULT_CAN2|---|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
+|RX_CAN2|PA15||
+|TX_CAN2|PA14||
+|S_CAN2|PA13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
+|FAULT_CAN2|PA12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
-- I2C
+* **I2C** : Datasheet page 40
 * **JTAG** : The MCU has a JTAG debugging standard built-in. The connections is made through a 10 (2x5) male pin headers connector with 1.27[mm] pitch : [FTSH-105-01-L-DV-K](http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf).  
-![image](image/JTAG_pins.png)
+<img src="/image/JTAG_pins.png" alt="JTAG_oins"
+	title="JTAG_pins" width="600" height="400" />
  
 * **USB** : the MCU has a built-in USB 2.0 line. In order to be used the MCU need to be powered at 3.3[V] (min 3[V] - max 3.6[V]) and there is some restrictions on clock source and frequency, especially for USB host connections, that need to be taken into account when doing the firmware. A micro-USB B connector has been choosen for that connection. The VBUS line (5[V]) is of no use on the board and it is not further connected. The ID pin from the micro-USB B connector is by default left unconnected but there is a solder bridge jumper available on the board if it needs to be grounded (in order to host USB communication).
 
