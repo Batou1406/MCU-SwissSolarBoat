@@ -35,7 +35,7 @@ https://webench.ti.com/power-designer/switching-regulator?powerSupply=0
 The MCU has several clocking options and can admit two external oscillators (32768[Hz] for real time counting applications RTC and higher frequency oscillators). By default it is running at 48[MHz] on internal oscillators. Only the RTC oscillators is mounted on the board. It is a 32768[Hz] oscillators with low load capacitance (9[pF]) [Q 0,032768-JTX310-9-20-T1-HMR-LF](https://www.jauch.com/downloadfile/57fde22d50dbf_d3c203011c87952f2834/jtx310-auto-2-210512.pdf) connected to pin PA0 and PA1 (XIN32, XOUT32).
 Hz
 ### Communication
-* **CAN** : The MCU comes with two built-in CAN controller which will be both used. The CAN tranciever [TCAN337GDR](https://www.ti.com/lit/ds/symlink/tcan337g.pdf?ts=1646566581440&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTCAN337GDR) is used to handle the CAN protocol. It's 3.3V logic, therefore the differential on the CAN bus is 3.3V. Nonetheless, the device is fully compatible with 5V differential logic. The CAN tranciver uses a serial line to communicate with the CAN controller of the MCU. m Moreover it also inlcudes a silent mode for listen only (high active) and a fault pin to indicate a failure on the device (high active). In order to use the silent mode, a solder bridge need to be fill on the board, otherwise, if silent mode is of no use, please use the other solder bridge to ground it. The fault pin needs a pull-up resistor to be mounted on the board and the solder bridge to be filled in order to be used.  
+* **CAN** : The MCU comes with two built-in CAN controller which will be both used. The CAN tranciever [TCAN337GDR](https://www.ti.com/lit/ds/symlink/tcan337g.pdf?ts=1646566581440&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DTCAN337GDR) is used to handle the CAN protocol. It's 3.3V logic, therefore the differential on the CAN bus is 3.3V. Nonetheless, the device is fully compatible with 5V differential logic. The CAN tranciver uses a serial line to communicate with the CAN controller of the MCU. m Moreover it also inlcudes a silent mode for listen only (high active) and a fault pin to indicate a failure on the device (high active). In order to use the silent mode, a solder bridge need to be fill on the board, otherwise, if silent mode is of no use, please use the other solder bridge to ground it. The fault pin needs a pull-up resistor to be mounted on the board and the solder bridge to be filled in order to be used.  Furthermore, the CAN lines are available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/S04B-PASK-2%28LF%29%28SN%29-JST-datasheet-1807.pdf) connector (4 pins - 2mm pitch). Ground and 24V supply voltage must be connected through jumpers. One must be extra careful when connecting them to avoid connecting two differents power supply together (risk of BOUM) or different supply than 24[V], and also when connecting the ground to avoid ground loop.
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
@@ -48,7 +48,15 @@ Hz
 |S_CAN2|PA13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN2|PA12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
-* **I2C** : Datasheet page 40
+* **I2C** : The MCU comes with 8 SERCOM lines, that can be configured for serial communication protocol such as UART, I2C, RS232, RS485, SPI. Please carefuly check the documentation before configuring one of these protocol, they require dedicated SERCOM port. Section 6.2.8.1 may be handy. Moreover, not all SERCOM port can be used for I2C communication. The pins that support I2C communication for a 64 pins package are :  
+![image](image/I2C_pinout.png)
+the MCU-board comes with one dedicated I2C line.
+|Name|Pin connected on the MCU|comment|
+|----|------------------------|-------|
+|SDA_1|PA08|SERCOM0-0|
+|SCL_1|PA09|SERCOM0-1|
+It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/S04B-PASK-2%28LF%29%28SN%29-JST-datasheet-1807.pdf) connector (4 pins - 2mm pitch). The power supply line is at 3.3[V] and is connected to the connector through a jumper. It must absolutely be deconnected if pluged to a device with its own power supply (even if it's 3.3[V]). Moreover, one must be careful when connecting the ground, in order to avoid ground loop.
+
 * **JTAG** : The MCU has a JTAG debugging standard built-in. The connections is made through a 10 (2x5) male pin headers connector with 1.27[mm] pitch : [FTSH-105-01-L-DV-K](http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf).  
 <img src="/image/JTAG_pins.png" alt="JTAG_oins"
 	title="JTAG_pins" width="600" height="400" />
