@@ -50,7 +50,7 @@ Hz
 
 * **I2C** : The MCU comes with 8 SERCOM lines, that can be configured for serial communication protocol such as UART, I2C, RS232, RS485, SPI. Please carefuly check the documentation before configuring one of these protocol, they require dedicated SERCOM port. Section 6.2.8.1 may be handy. Moreover, not all SERCOM port can be used for I2C communication. The pins that support I2C communication for a 64 pins package are :  
 ![image](image/I2C_pinout.png)
-the MCU-board comes with one dedicated I2C line. Another line has been left free for that pruposes but there is no connector mounted on the board by default.
+the MCU-board comes with one dedicated I2C line. Another line has been left free for that pruposes but there is no connector mounted on the board by default. Other I2C pins than those listed below are already used for other tasks (CAN, SD-card) and aren't available anymore.
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
