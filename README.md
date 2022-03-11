@@ -39,23 +39,25 @@ Hz
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
+|RX_CAN0|PA23||
+|TX_CAN0|PA22||
+|S_CAN0|PA21|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
+|FAULT_CAN0|PA20|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 |RX_CAN1|PB15||
 |TX_CAN1|PB14||
-|S_CAN1|PB13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
-|FAULT_CAN1|PB12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
-|RX_CAN2|PA15||
-|TX_CAN2|PA14||
-|S_CAN2|PA13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
-|FAULT_CAN2|PA12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
+|S_CAN1|PA15|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
+|FAULT_CAN1|PA14|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
 * **I2C** : The MCU comes with 8 SERCOM lines, that can be configured for serial communication protocol such as UART, I2C, RS232, RS485, SPI. Please carefuly check the documentation before configuring one of these protocol, they require dedicated SERCOM port. Section 6.2.8.1 may be handy. Moreover, not all SERCOM port can be used for I2C communication. The pins that support I2C communication for a 64 pins package are :  
 ![image](image/I2C_pinout.png)
-the MCU-board comes with one dedicated I2C line. 
+the MCU-board comes with one dedicated I2C line. Another line has been left free for that pruposes but there is no connector mounted on the board by default. Other I2C pins than those listed below are already used for other tasks (CAN, SD-card) and aren't available anymore.
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
-|SDA_1|PA08|SERCOM0-0|
-|SCL_1|PA09|SERCOM0-1|  
+|SDA_0|PA16||
+|SCL_0|PA17||  
+|SDA_1|PA13|*no connector mounted on the main-MCU board, a dedicated shield is necessary to use that line*|
+|SCL_1|PA12|*no connector mounted on the main-MCU board, a dedicated shield is necessary to use that line*|  
 
 It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/S04B-PASK-2%28LF%29%28SN%29-JST-datasheet-1807.pdf) connector (4 pins - 2mm pitch). The power supply line is at 3.3[V] and is connected to the connector through a jumper. It must absolutely be deconnected if pluged to a device with its own power supply (even if it's 3.3[V]). Moreover, one must be careful when connecting the ground, in order to avoid ground loop.
 
@@ -69,6 +71,18 @@ It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/
 - complete list of connectors
 
 ### SD-card and memory
+An SD slot is available on the board and it is handle by the SDHC0 line of the MCU. It's powered at the 3.3[V] by the LDO. Please be careful and read the dedicated documentation when designing an SD application, especially about the oprating voltage.
+
+|Name|Pin connected on the MCU|comment|
+|----|------------------------|-------|
+|SDHC0 DAT0|PA09||
+|SDHC0 DAT1|PA10||
+|SDHC0 DAT2|PA11||
+|SDHC0 DAT3|PB10||
+|SDHC0 CMD|PA08||
+|SDHC0 CLK|PB11||
+|SDHC0 CD|PA06||
+|SDHC0 WP|PA07||
 
 
 ## exhaustive list of component
