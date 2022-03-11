@@ -1,0 +1,34 @@
+Add Component: Footprint Not Found SOLDERJUMPER_CLOSEDWIRE
+Add Component: Footprint Not Found SOLDERJUMPER_CLOSEDWIRE
+Add Component: Footprint Not Found SOLDERJUMPER_CLOSEDWIRE
+Add Component: Footprint Not Found Model Name
+Add Component: Footprint Not Found Model Name
+Add Component: Footprint Not Found SOLDERJUMPER_CLOSEDWIRE
+Add Component: Footprint Not Found SOLDERJUMPER_CLOSEDWIRE
+Add Pin To Net: Unknown Pin: Pin JTAG-GNDDETECT
+Add Pin To Net: Unknown Pin: Pin JTAG-GND
+Add Pin To Net: Unknown Pin: Pin JTAG-nRESET
+Add Pin To Net: Unknown Pin: Pin JTAG-SDWIO
+Add Pin To Net: Unknown Pin: Pin JTAG-SWCLK
+Add Pin To Net: Unknown Pin: Pin JTAG-VCC
+Add Pin To Net: Unknown Pin: Pin SJ1-1
+Add Pin To Net: Unknown Pin: Pin SJ1-2
+Add Pin To Net: Unknown Pin: Pin SJ2-1
+Add Pin To Net: Unknown Pin: Pin SJ2-2
+Add Pin To Net: Unknown Pin: Pin SJ3-1
+Add Pin To Net: Unknown Pin: Pin SJ3-2
+Add Pin To Net: Unknown Pin: Pin SJ4-1
+Add Pin To Net: Unknown Pin: Pin SJ4-2
+Add Pin To Net: Unknown Pin: Pin SJ5-1
+Add Pin To Net: Unknown Pin: Pin SJ5-2
+Add Pin To Net: Unknown Pin: Pin SJ6-1
+Add Pin To Net: Unknown Pin: Pin SJ6-2
+Add Pin To Net: Unknown Pin: Pin SJ7-1
+Add Pin To Net: Unknown Pin: Pin SJ7-2
+Add Class Member: Failed to add class member : Component SJ1 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ2 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ3 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ4 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ5 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ6 SOLDERJUMPERCLOSED
+Add Class Member: Failed to add class member : Component SJ7 SOLDERJUMPERCLOSED
