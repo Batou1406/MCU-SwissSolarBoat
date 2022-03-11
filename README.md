@@ -54,8 +54,8 @@ the MCU-board comes with one dedicated I2C line. Another line has been left free
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
-|SDA_0|PA08||
-|SCL_0|PA09||  
+|SDA_0|PA16||
+|SCL_0|PA17||  
 |SDA_1|PA13|*no connector mounted on the main-MCU board, a dedicated shield is necessary to use that line*|
 |SCL_1|PA12|*no connector mounted on the main-MCU board, a dedicated shield is necessary to use that line*|  
 
@@ -71,6 +71,18 @@ It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/
 - complete list of connectors
 
 ### SD-card and memory
+An SD slot is available on the board and it is handle by the SDHC0 line of the MCU. 
+
+|Name|Pin connected on the MCU|comment|
+|----|------------------------|-------|
+|SDHC0 DAT0|PA09||
+|SDHC0 DAT1|PA10||
+|SDHC0 DAT2|PA11||
+|SDHC0 DAT3|PB10||
+|SDHC0 CMD|PA08||
+|SDHC0 CLK|PB11||
+|SDHC0 CD|PA06||
+|SDHC0 WP|PA07||
 
 
 ## exhaustive list of component
