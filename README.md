@@ -71,7 +71,7 @@ It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/
 - complete list of connectors
 
 ### SD-card and memory
-An SD slot is available on the board and it is handle by the SDHC0 line of the MCU. 
+An SD slot is available on the board and it is handle by the SDHC0 line of the MCU. It's powered at the 3.3[V] by the LDO. Please be careful and read the dedicated documentation when designing an SD application, especially about the oprating voltage.
 
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
