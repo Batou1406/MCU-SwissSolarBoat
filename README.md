@@ -43,10 +43,10 @@ Hz
 |TX_CAN1|PB14||
 |S_CAN1|PB13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
 |FAULT_CAN1|PB12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
-|RX_CAN2|---||
-|TX_CAN2|---||
-|S_CAN2|---|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
-|FAULT_CAN2|---|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
+|RX_CAN2|PA15||
+|TX_CAN2|PA14||
+|S_CAN2|PA13|a solder bridge needs to be filled if one wants to connect this pin to the MCU, otherwise another solder bridge needs to be filled in order to ground it|
+|FAULT_CAN2|PA12|A pull-up resistor needs to be mounted and a solder bridge to be filled if one wants to connect this pin to the MCU|
 
 - I2C
 * **JTAG** : The MCU has a JTAG debugging standard built-in. The connections is made through a 10 (2x5) male pin headers connector with 1.27[mm] pitch : [FTSH-105-01-L-DV-K](http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf).  
