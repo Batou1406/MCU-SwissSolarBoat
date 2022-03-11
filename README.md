@@ -15,7 +15,7 @@ The main MCU-board is made of a powerfull microcontroller used for communication
 ## Sub-system characterization
 ### MCU
 The board is based on [ATSAME51J20A-AF](https://www.mouser.ch/datasheet/2/268/60001507E-1660031.pdf) MCU from atmel, using the 32-bit ARM® Cortex®-M4 processor with Floating Point Unit (FPU). It is running at 120 [MHz] on 3.3[V].
-* **Reset Pin** the reset pin is low active and powered-up trough a low pass RC filter as recommanded for design in noisy environnement.
+* **Reset Pin** the reset pin is low active and powered-up trough a low pass RC filter as recommanded for design in noisy environnement. Moreover, it's connected to a push button for manual reset.
 * **Power Pins** The power pins are wired according to typical power connection for switching mode power supply, with a feartite bead for high frequency isolation and EMC.
 ![image](image/power_pins_typical.png)
 
