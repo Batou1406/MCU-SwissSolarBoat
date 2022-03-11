@@ -50,11 +50,13 @@ Hz
 
 * **I2C** : The MCU comes with 8 SERCOM lines, that can be configured for serial communication protocol such as UART, I2C, RS232, RS485, SPI. Please carefuly check the documentation before configuring one of these protocol, they require dedicated SERCOM port. Section 6.2.8.1 may be handy. Moreover, not all SERCOM port can be used for I2C communication. The pins that support I2C communication for a 64 pins package are :  
 ![image](image/I2C_pinout.png)
-the MCU-board comes with one dedicated I2C line.
+the MCU-board comes with one dedicated I2C line. 
+
 |Name|Pin connected on the MCU|comment|
 |----|------------------------|-------|
 |SDA_1|PA08|SERCOM0-0|
-|SCL_1|PA09|SERCOM0-1|
+|SCL_1|PA09|SERCOM0-1|  
+
 It's available through a [JST-S04B-PASK-2-LF-SN](https://datasheet.octopart.com/S04B-PASK-2%28LF%29%28SN%29-JST-datasheet-1807.pdf) connector (4 pins - 2mm pitch). The power supply line is at 3.3[V] and is connected to the connector through a jumper. It must absolutely be deconnected if pluged to a device with its own power supply (even if it's 3.3[V]). Moreover, one must be careful when connecting the ground, in order to avoid ground loop.
 
 * **JTAG** : The MCU has a JTAG debugging standard built-in. The connections is made through a 10 (2x5) male pin headers connector with 1.27[mm] pitch : [FTSH-105-01-L-DV-K](http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf).  
