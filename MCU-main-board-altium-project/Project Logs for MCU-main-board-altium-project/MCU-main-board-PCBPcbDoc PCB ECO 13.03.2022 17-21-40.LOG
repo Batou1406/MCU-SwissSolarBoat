@@ -1,0 +1,81 @@
+Added Component: Designator=J?(JUMPER)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J?(JUMPER)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J?(JUMPER)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=SJ2(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ3(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ4(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ5(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ6(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ7(custom Solder bridge-Footprint-1)
+Added Component: Designator=SJ?(custom Solder bridge-Footprint-1)
+Add Pin To Net: Unknown Pin: Pin JTAG-GNDDETECT
+Add Pin To Net: Unknown Pin: Pin JTAG-GND
+Add Pin To Net: Unknown Pin: Pin JTAG-nRESET
+Add Pin To Net: Unknown Pin: Pin JTAG-SDWIO
+Add Pin To Net: Unknown Pin: Pin JTAG-SWCLK
+Add Pin To Net: Unknown Pin: Pin JTAG-VCC
+Added Pin To Net: NetName=NetMicrocontrolleur_32 Pin=SJ2-1
+Added Pin To Net: NetName=NetCAN tranciever 2_8 Pin=SJ2-2
+Added Pin To Net: NetName=NetMicrocontrolleur_31 Pin=SJ3-1
+Added Pin To Net: NetName=NetCAN tranciever 2_5 Pin=SJ3-2
+Added Pin To Net: NetName=NetMicrocontrolleur_42 Pin=SJ4-1
+Added Pin To Net: NetName=NetCAN tranciever 1_8 Pin=SJ4-2
+Added Pin To Net: NetName=GND Pin=SJ5-1
+Added Pin To Net: NetName=NetCAN tranciever 1_8 Pin=SJ5-2
+Added Pin To Net: NetName=NetMicrocontrolleur_41 Pin=SJ6-1
+Added Pin To Net: NetName=NetCAN tranciever 1_5 Pin=SJ6-2
+Added Pin To Net: NetName=GND Pin=SJ7-1
+Added Pin To Net: NetName=NetJ5_4 Pin=SJ7-2
+Added Pin To Net: NetName=GND Pin=SJ?-1
+Added Pin To Net: NetName=NetCAN tranciever 2_8 Pin=SJ?-2
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Net: Name=NetJ?_1
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Net: Name=NetJ?_2
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component J? JUMPER
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component J? JUMPER
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component J? JUMPER
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ2 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ3 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ4 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ5 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ6 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ7 custom Solder bridge
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ? custom Solder bridge
+Added Room: Name=MCU-connectors-schematic
+Added Room: Name=MCU-main-board-schematic

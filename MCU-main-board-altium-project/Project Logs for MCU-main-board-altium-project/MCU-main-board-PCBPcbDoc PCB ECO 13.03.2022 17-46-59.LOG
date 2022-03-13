@@ -1,0 +1,4 @@
+Removed Member From Class: ClassName=MCU-connectors-schematic Member=J?
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component JTAG FTSH-105-01-L-DV-K
+Added Room: Name=MCU-connectors-schematic
+Added Room: Name=MCU-main-board-schematic

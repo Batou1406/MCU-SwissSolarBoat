@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=NetMicrocontrolleur_17 Pin=R12-2
+Removed Pin From Net: NetName=NetMicrocontrolleur_18 Pin=R13-2
+Removed Pin From Net: NetName=NetMicrocontrolleur_19 Pin=R14-2
+Removed Pin From Net: NetName=NetMicrocontrolleur_20 Pin=R15-2
+Removed Pin From Net: NetName=NetMicrocontrolleur_23 Pin=R16-2
+Removed Pin From Net: NetName=NetMicrocontrolleur_23 Pin=SD1-1
+Removed Pin From Net: NetName=NetMicrocontrolleur_17 Pin=SD1-2
+Removed Pin From Net: NetName=GND Pin=SD1-3
+Removed Pin From Net: NetName=NetMicrocontrolleur_20 Pin=SD1-9
+Removed Pin From Net: NetName=NetMicrocontrolleur_15 Pin=SD1-10
+Removed Pin From Net: NetName=NetMicrocontrolleur_16 Pin=SD1-11
+Removed Pin From Net: NetName=GND Pin=SD1-13
+Change Component Footprint: Designator=SD1 Old Footprint=3M-SD-RSMT-2-MQ-WF-11_V New Footprint=MOLX-104031-0811_V
+Change Component Comment : Designator=SD1 Old Comment=SD-RSMT-2-MQ-WF-CUSTOM New Comment=104031-0811
+Change Managed Component Library Link : Designator=SD1 Old VaultGUID=402AE90E-E6D4-42C2-A6A4-831F65D0074D New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=CC0B1FB7-706F-4024-9B22-FFED1DF32B59 New ItemGUID=2EA09FCE-70E1-46CF-A957-175F3D5C6964 Old RevisionGUID=28dcf7b5-23e0-4590-97c3-f212c9ab1185 New RevisionGUID=5F9CA9AE-49B6-4A42-80B6-F02877DD2D24
+Change component parameters: Designator = "SD1" ("SD1"); Footprint = "3M-SD-RSMT-2-MQ-WF-11_V"; UniqueID = "\WCZLFGDK" ("\WCZLFGDK")
+Change component parameters (AddParameter): Name = "Brand"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Card Type"; Value = "microSD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "PhosphorBronze"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "500mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "http://www.molex.com/pdm_docs/sd/1040310811_sd.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "Rev. E, 04/2006"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.42mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "LiquidCrystalPolymer(LCP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insertion - Extraction Style"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "11.4mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.molex.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Cycles"; Value = "10000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1Row"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Orientation"; Value = "RightAngle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "8-Pin Surface Mount Device, Body 11.95 x 11.4 mm, Pitch 1.1 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "104031-0811"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "1.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product"; Value = "CardConnectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Category"; Value = "MemoryCardConnectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "True"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "104031"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination Style"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "10VAC/DC"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetMicrocontrolleur_20 Pin=R12-2
+Added Pin To Net: NetName=NetMicrocontrolleur_23 Pin=R13-2
+Added Pin To Net: NetName=NetMicrocontrolleur_17 Pin=R14-2
+Added Pin To Net: NetName=NetMicrocontrolleur_18 Pin=R15-2
+Added Pin To Net: NetName=NetMicrocontrolleur_19 Pin=R16-2
+Added Pin To Net: NetName=NetMicrocontrolleur_20 Pin=SD1-1
+Added Pin To Net: NetName=NetMicrocontrolleur_23 Pin=SD1-2
+Added Pin To Net: NetName=NetMicrocontrolleur_17 Pin=SD1-3
+Added Pin To Net: NetName=NetMicrocontrolleur_15 Pin=SD1-9
+Added Pin To Net: NetName=NetMicrocontrolleur_16 Pin=SD1-10
+Added Pin To Net: NetName=GND Pin=SD1-11
+Added Member To Class: ClassName=MCU-connectors-schematic Member=Component SJ5 custom Solder bridge
+Added Room: Name=MCU-connectors-schematic
+Added Room: Name=MCU-main-board-schematic

@@ -1,0 +1,32 @@
+Change Component Footprint: Designator=C22 Old Footprint=CAPPR65-350-1150X800X1250 New Footprint=FP-GRM32E-0_3-0_2-IPC_C
+Change Component Comment : Designator=C22 Old Comment=ECA-2AM470 New Comment=47uF
+Change Managed Component Library Link : Designator=C22 Old VaultGUID=402AE90E-E6D4-42C2-A6A4-831F65D0074D New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=0656A373-F70D-4D33-BEFF-BAC67CC7F6A3 New ItemGUID=30415B0E-892A-47C8-8921-276FFF1A03AB Old RevisionGUID=F830E3B5-C2DB-4945-A5A3-75BC2C6A00FC New RevisionGUID=CFDE8D88-D403-4A30-88EA-56BA3F81CBFC
+Change component parameters: Designator = "C22" ("C22"); Footprint = "CAPPR65-350-1150X800X1250"; UniqueID = "\NHHCFVRK" ("\NHHCFVRK")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Imperial)"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case Code (Metric)"; Value = "3225"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness"; Value = "0.106inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating (DC)"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "0.098inch"; VariantName = "[No Variations]"
+Added Room: Name=MCU-connectors-schematic
+Added Room: Name=MCU-main-board-schematic
