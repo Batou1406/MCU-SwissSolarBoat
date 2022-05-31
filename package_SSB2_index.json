@@ -2,10 +2,8 @@
   "packages":
   [
     {
-      "name": "robohat",
-      "maintainer": "Robotics Masters",
-      "websiteURL": "https://roboticsmasters.co",
-      "email" : "techsupport@roboticsmasters.co",
+      "name": "SSB custom MCU",
+      "maintainer": "Baptiste Savioz",
       "platforms":
       [
         {
