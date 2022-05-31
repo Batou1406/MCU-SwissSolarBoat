@@ -1,0 +1,63 @@
+{
+  "packages": [
+    {
+      "name": "SSB custom MCU",
+      "maintainer": "Baptiste Savioz",
+      "platforms": [
+        {
+          "name": "Swiss Solar Boat MCU",
+          "architecture": "samd",
+          "version": "2.1.1",
+          "category": "Contributed",
+          "url": "https://github.com/Batou1406/MCU-SwissSolarBoat/blob/main/customboard.zip",
+          "archiveFileName": "customboard.zip",
+          "checksum": "SHA-256:b030c1b5d0d741e02c713651e91050a61decddc47987150d4ac74fd218c54224",
+          "size": "7054414",
+          "boards": [
+            {
+              "name": "Swiss Solar Boat MCU"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "adafruit",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2019q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.7.0-arduino3"
+            },
+            {
+              "packager": "adafruit",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS",
+              "version": "5.4.0"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.2.1"
+            }
+          ]
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
