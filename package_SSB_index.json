@@ -1,24 +1,27 @@
 {
-  "packages": [
+  "packages":
+  [
     {
       "name": "SSB custom MCU",
       "maintainer": "Baptiste Savioz",
-      "platforms": [
+      "platforms":
+      [
         {
-          "name": "Swiss Solar Boat MCU Boards",
+          "name": "Swiss Solar Boat MCU boards",
           "architecture": "samd",
           "version": "2.1.1",
           "category": "Contributed",
           "url": "https://github.com/Batou1406/MCU-SwissSolarBoat/blob/main/customboard.zip",
           "archiveFileName": "customboard.zip",
-          "checksum": "SHA-256:4ea5032d9283b350c0193efe9712fe3f7e54b80af607d50458ed1792eecee70f",
-          "size": "(7054403",
+          "checksum": "SHA-256:b030c1b5d0d741e02c713651e91050a61decddc47987150d4ac74fd218c54224",
+          "size": "7054414",
           "boards": [
             {
-              "name": "ssb_custom_mcu"
+              "name": "SSB custom MCU"
             }
           ],
-          "toolsDependencies": [
+          "toolsDependencies":
+          [
             {
               "packager": "adafruit",
               "name": "arm-none-eabi-gcc",
@@ -57,7 +60,9 @@
           ]
         }
       ],
-      "tools": []
+      "tools":
+      [
+      ]
     }
   ]
 }
