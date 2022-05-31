@@ -13,8 +13,8 @@
           "category": "Contributed",
           "url": "https://github.com/Batou1406/MCU-SwissSolarBoat/blob/main/customboard.zip",
           "archiveFileName": "customboard.zip",
-          "checksum": "SHA-256:b030c1b5d0d741e02c713651e91050a61decddc47987150d4ac74fd218c54224",
-          "size": "7054414",
+          "checksum": "SHA-256:c94e3b6ab22a1f212a1beb92e29979061115bc946ccd5a4461bd85531e5ffa29",
+          "size": "(329983231",
           "boards": [
             {
               "name": "SSB custom MCU"
